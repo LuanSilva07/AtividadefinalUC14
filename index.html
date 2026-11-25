@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Esta linha deixa o site responsivo no celular -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GeekStore - Início</title>
+  <link rel="icon" type="image/x-icon" href="./img/Gemini_Generated_Image_gshj71gshj71gshj.jpg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  
+</head>
+<body>
+
+  <header class="cabecalho">
+    <a href="index.html" class="logo">GeekStore</a>
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="detalhes.html">Detalhes</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+    <span class="carrinho">Carrinho (<span id="contador">0</span>)</span>
+  </header>
+
+  <main>
+
+    <section class="banner">
+      <img src="./img/banner.jpg" alt="Banner principal da GeekStore">
+      <a href="produtos.html" class="botao">Ver todos os produtos</a>
+    </section>
+
+    <section>
+      <h2>Categorias</h2>
+      <div class="categorias">
+        <a href="produtos.html" class="categoria">Games</a>
+        <a href="produtos.html" class="categoria">Vestuário</a>
+        <a href="produtos.html" class="categoria">Colecionáveis</a>
+        <a href="produtos.html" class="categoria">Acessórios</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Destaques da semana</h2>
+      <div class="carrossel">
+        <button id="anterior">◀</button>
+
+        <div class="slides">
+          <!-- Slide 1: produtos 1, 2 e 3 (começa visível: classe "ativo") -->
+          <div class="slide ativo">
+        <article class="card">
+          <img src="./img/Camiseta Anime Gojo Azul Elétrico-1.png" alt="Camiseta Geek">
+          <h3>Camiseta Geek</h3>
+          <p class="preco">R$ 89,90</p>
+          <a href="detalhes.html" class="botao">Ver detalhes</a>
+        </article>
+        <article class="card">
+          <img src="./img/minatoaction.jpg" alt="Action Figure">
+          <h3>Action Figure</h3>
+          <p class="preco">R$ 179,90</p>
+          <a href="detalhes.html" class="botao">Ver detalhes</a>
+        </article>
+        <article class="card">
+          <img src="./img/caneca.jpg" alt="Caneca Gamer">
+          <h3>Caneca Gamer</h3>
+          <p class="preco">R$ 39,90</p>
+          <a href="detalhes.html" class="botao">Ver detalhes</a>
+        </article>
+          </div>
+          <!-- Slide 2: produtos 4, 5 e 6 (começa escondido) -->
+          <div class="slide">
+        <article class="card">
+          <img src="./img/teclado.jpg" alt="Teclado Gamer">
+          <h3>Teclado Gamer</h3>
+          <p class="preco">R$ 249,90</p>
+          <a href="detalhes.html" class="botao">Ver detalhes</a>
+        </article>
+        <article class="card">
+          <img src="./img/mouse.jpg" alt="Mouse Gamer">
+          <h3>Mouse Gamer</h3>
+          <p class="preco">R$ 119,90</p>
+          <a href="detalhes.html" class="botao">Ver detalhes</a>
+        </article>
+        <article class="card">
+          <img src="./img/headset.jpg" alt="Headset Gamer">
+          <h3>Headset Gamer</h3>
+          <p class="preco">R$ 199,90</p>
+          <a href="detalhes.html" class="botao">Ver detalhes</a>
+        </article>
+          </div>
+        </div>
+
+        <button id="proximo">▶</button>
+      </div>
+      <p id="indicador" class="indicador">Slide 1 de 2</p>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p><a href="index.html">Início</a> | <a href="produtos.html">Produtos</a> | <a href="detalhes.html">Detalhes</a> | <a href="contato.html">Contato</a></p>
+    <p>Instagram @geekstore | YouTube /geekstore | Discord GeekStore</p>
+    <p>© 2026 GeekStore - Projeto prático BM25</p>
+  </footer>
+
+  <script src="js/home.js"></script>
+</body>
+</html>

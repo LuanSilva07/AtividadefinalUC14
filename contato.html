@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Esta linha deixa o site responsivo no celular -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GeekStore - Contato</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <a href="index.html" class="logo">GeekStore</a>
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="detalhes.html">Detalhes</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+    <span class="carrinho">Carrinho (<span id="contador">0</span>)</span>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Sobre a GeekStore</h2>
+      <p>A GeekStore nasceu em 2026, quando o professor ninja elaborou esta atividade.
+        Então decidi abrir uma loja para quem vive o universo geek. Começamos vendendo
+         camisetas e canecas, games, acessórios e colecionáveis para todos
+         os fãs, PS: Alunos do senac não paga mais também não leva.</p>
+    </section>
+
+    <section class="duas-colunas">
+      <div>
+        <h2>Onde estamos</h2>
+        <p>Rua dos Games, 123 - Centro<br>São José dos Campos - SP</p>
+        <p>Atendimento: segunda a sexta, das 9h às 9:01h</p>
+        <h3>Redes sociais</h3>
+        <p>Instagram @geekstore<br>YouTube /geekstore<br>Discord GeekStore</p>
+      </div>
+
+      <div>
+        <h2>Fale conosco</h2>
+        <form id="formulario">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome">
+
+          <label for="email">E-mail</label>
+          <input type="text" id="email">
+
+          <label for="assunto">Assunto</label>
+          <input type="text" id="assunto">
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" rows="5"></textarea>
+
+          <button type="submit" class="botao">Enviar</button>
+          <p id="resposta"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p><a href="index.html">Início</a> | <a href="produtos.html">Produtos</a> | <a href="detalhes.html">Detalhes</a> | <a href="contato.html">Contato</a></p>
+    <p>Instagram @geekstore | YouTube /geekstore | Discord GeekStore</p>
+    <p>© 2026 GeekStore - Projeto de curso</p>
+  </footer>
+
+  <script src="js/contato.js"></script>
+</body>
+</html>

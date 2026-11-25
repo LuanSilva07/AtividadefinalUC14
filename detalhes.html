@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Esta linha deixa o site responsivo no celular -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GeekStore - Detalhes do produto</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/detalhes.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <a href="index.html" class="logo">GeekStore</a>
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="detalhes.html">Detalhes</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+    <span class="carrinho">Carrinho (<span id="contador">0</span>)</span>
+  </header>
+
+  <main>
+
+    <section class="detalhe">
+
+      <div class="galeria">
+        <img id="principal" src="./img/Camiseta Anime Gojo Azul Elétrico-1.png" alt="Camiseta Geek">
+        <div class="minis">
+          <img src="./img/Camiseta Anime Gojo Azul Elétrico-1.png" onclick="trocarImagem(1)" alt="Frente">
+          <img src="./img/Camisetas Gojo em Três Vistas.png" onclick="trocarImagem(2)" alt="Costas">
+          <img src="./img/Camiseta Anime Gojo Azul Elétrico-1.png" onclick="trocarImagem(3)" alt="Detalhe">
+        </div>
+      </div>
+
+      <div class="info">
+        <h2>Camiseta Geek</h2>
+        <p class="preco">R$ 89,90</p>
+        <p>ou 3x de R$ 29,97 sem juros</p>
+
+        <h3>Descrição técnica</h3>
+        <ul>
+          <li>Material: 100% algodão penteado</li>
+          <li>Gramatura: 180 g/m²</li>
+          <li>Estampa: silk de alta durabilidade</li>
+          <li>Modelagem: unissex, corte reto</li>
+          <li>Lavagem: máquina em água fria, sem alvejante</li>
+        </ul>
+
+        <label for="tamanho">Tamanho:</label>
+        <select id="tamanho">
+          <option>P</option>
+          <option>M</option>
+          <option>G</option>
+          <option>GG</option>
+        </select>
+
+        <label for="cor">Cor:</label>
+        <select id="cor">
+          <option>Preta</option>
+          <option>Branca</option>
+          <option>Azul</option>
+        </select>
+
+        <p>Quantidade:
+          <button onclick="mudarQtd(-1)">-</button>
+          <span id="qtd">1</span>
+          <button onclick="mudarQtd(1)">+</button>
+        </p>
+
+        <button class="botao" onclick="adicionar()">Adicionar ao Carrinho</button>
+        <p id="aviso"></p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p><a href="index.html">Início</a> | <a href="produtos.html">Produtos</a> | <a href="detalhes.html">Detalhes</a> | <a href="contato.html">Contato</a></p>
+    <p>Instagram @geekstore | YouTube /geekstore | Discord GeekStore</p>
+    <p>© 2026 GeekStore - Projeto de curso</p>
+  </footer>
+
+  <script src="js/detalhes.js"></script>
+</body>
+</html>
